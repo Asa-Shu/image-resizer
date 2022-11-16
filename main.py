@@ -26,7 +26,7 @@ def expand_to_square(pil_img, BACKGROUND_COLOR):
 
 for file in files:
     root, ext = os.path.splitext(file)
-    if ext in ['.png', '.jpg', '.jpeg']:
+    if ext in ['.png', '.jpg', '.jpeg', '.webp']:
         img = Image.open(file)
         img = expand_to_square(img, BACKGROUND_COLOR)
         img_resize = img.resize(SIZE)
